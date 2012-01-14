@@ -47,6 +47,16 @@ class Application_Model_DbTable_Crud extends Zend_Db_Table_Abstract
         $where = $langTable->getAdapter()->quoteInto('id = ?', $id);
         $langTable->delete($where);
     }
-
+    
+    public function getSearchList($text) {
+        $conn = new Application_Model_DbTable_Crud();
+        $col = $conn->getAdapter()->quoteIdentifier('language_name'); 
+        $where = $conn->getAdapter()->quoteInto("$col LIKE ? ", '%'.$text.'%'); 	
+        $col = $conn->getAdapter()->quoteIdentifier('language_description'); 
+        $where .= $conn->getAdapter()->quoteInto("OR $col LIKE (?) ", '%'.$text.'%'); 
+        $select = $this->select()->from('proglang')->where($where);
+        $result = $this->fetchAll($select);
+        return $result;
+    }
 }
 

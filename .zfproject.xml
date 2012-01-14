@@ -27,6 +27,10 @@
           <actionMethod actionName="newLang"/>
           <actionMethod actionName="delete"/>
           <actionMethod actionName="update"/>
+          <actionMethod actionName="search"/>
+        </controllerFile>
+        <controllerFile controllerName="Search">
+          <actionMethod actionName="index"/>
         </controllerFile>
       </controllersDirectory>
       <formsDirectory enabled="false"/>
@@ -80,6 +84,12 @@
           <viewControllerScriptsDirectory forControllerName="Crud">
             <viewScriptFile forActionName="update"/>
           </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Crud">
+            <viewScriptFile forActionName="search"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Search">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
         <viewFiltersDirectory enabled="false"/>
@@ -132,6 +142,10 @@
             <testApplicationActionMethod forActionName="newLang"/>
             <testApplicationActionMethod forActionName="delete"/>
             <testApplicationActionMethod forActionName="update"/>
+            <testApplicationActionMethod forActionName="search"/>
+          </testApplicationControllerFile>
+          <testApplicationControllerFile forControllerName="Search">
+            <testApplicationActionMethod forActionName="index"/>
           </testApplicationControllerFile>
         </testApplicationControllerDirectory>
       </testApplicationDirectory>

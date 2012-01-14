@@ -26,3 +26,7 @@ ul.menu li { display:inline; margin-right: 20px; }
 ul.errors { margin-top:5px; }
 ul.errors li { color:red; }
 
+.search { margin:0px 0 -2px 7px; }
+.block { display: block; }
+#loading { margin:-8px 0 0 0; }
+.p20 { padding:20px 0 0 20px; }

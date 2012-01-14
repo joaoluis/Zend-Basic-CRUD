@@ -2,10 +2,13 @@
 <?php echo $this->doctype() ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Web Application - Programming Languages Manager</title>
-  <?php echo $this->headLink()->appendStylesheet('/css/foundation.css') ?>
-  <?php echo $this->headLink()->appendStylesheet('/css/app.css') ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Web Application - Programming Languages Manager</title>
+    <?php echo $this->headLink()->appendStylesheet('/css/foundation.css') ?>
+    <?php echo $this->headLink()->appendStylesheet('/css/app.css') ?>
+    <?php echo $this->headLink()->appendStylesheet('/css/ie.css', 'screen', 'if lt IE 9') ?>
+    <?php echo $this->headScript()->appendFile('http://html5shiv.googlecode.com/svn/trunk/html5.js', $type = 'text/javascript', $attrs = array('conditional' => 'lt IE 9'));?>
+    <?php echo $this->headScript()->appendFile(' https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', $type='text/javascript'); ?>
 </head>
 <body>
     <div class="row">

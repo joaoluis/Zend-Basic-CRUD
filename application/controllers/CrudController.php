@@ -9,7 +9,7 @@ class CrudController extends Zend_Controller_Action
         $layout->setLayout('layout');
         if ($this->_helper->FlashMessenger->hasMessages()) {
             $this->view->messages = $this->_helper->FlashMessenger->getMessages();
-        }
+        } 
     }
 
     public function indexAction()
@@ -91,24 +91,9 @@ class CrudController extends Zend_Controller_Action
             }
         }
         else {
-            $this->view->updateForm = $form;           
+            $this->view->updateForm = $form; 
         }
     }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
