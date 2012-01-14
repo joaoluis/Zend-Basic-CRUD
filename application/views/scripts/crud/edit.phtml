@@ -1,0 +1,19 @@
+<div id="view-content">
+    <p><h6>Editing "<? echo $this->language_name; ?>" language</h6></p>
+    <form class="nice" action="<?= $this->updateForm->getAction(); ?>" method="<?= $this->updateForm->getMethod(); ?>" >
+        <?php echo $this->updateForm->getElement('edit_id'); ?>
+    <table class="list-languages">
+        <tr>
+            <td><b>Nome da Linguagem</b></td>
+            <td><?php echo $this->updateForm->getElement('language_name'); ?></td>
+        </tr>
+        <tr>
+            <td><b>Descrição</b></td>
+            <td><?php echo $this->updateForm->getElement('language_description'); ?></td>
+        </tr>
+        <tr>
+            <td colspan="2"><?php echo $this->updateForm->getElement('submit'); ?></td>
+        </tr>
+    </table>
+    </form>
+</div>

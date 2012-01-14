@@ -1,0 +1,28 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+.white-background { background-color: #fff; padding: 40px; border:1px solid #ccc; }
+table.list-languages { width:100%; }
+table.list-languages tr th { vertical-align: top; background-color: #aaa; color:#fff; font-weight:bold; text-align: left; padding: 5px; border-bottom:1px dotted #ccc; }
+table.list-languages tr td { vertical-align: top; padding:5px; }
+.icon { text-align: center; width:45px; }
+ul.actions-list { margin-bottom: 35px; }
+ul.actions-list li { display: inline; margin-right: 20px; }
+
+ul.menu li { display:inline; margin-right: 20px; }
+ul.errors { margin-top:5px; }
+ul.errors li { color:red; }
+

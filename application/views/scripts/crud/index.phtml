@@ -1,0 +1,32 @@
+<div id="view-content">
+    <ul class="actions-list">
+        <li>Pesquisa:</li>
+        <li><a href="/crud/insert" class="nice blue button right">Insert New Record</a></li>
+    </ul>
+    <?php
+        if(count($this->crud)>0){
+            ?>
+            <table class="list-languages">
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <?php
+                foreach($this->crud AS $pl){
+                    ?>
+                    <tr>
+                        <td><?php echo $pl->language_name; ?></td>
+                        <td><?php echo $pl->language_description; ?></td>
+                        <td class="icon"><a href="/crud/edit?id=<?php echo $pl->id; ?>"><img src="/images/icons/layout-design.png" /></a></td>
+                        <td class="icon"><a href="/crud/delete?id=<?php echo $pl->id; ?>"><img src="/images/icons/cross.png" /></a></td>
+                    </tr>
+                    <?
+                }
+                ?>
+            </table>
+        <?
+        }       
+    ?>
+</div>

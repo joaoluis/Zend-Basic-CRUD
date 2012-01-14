@@ -1,0 +1,28 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Web Application - Programming Languages Manager</title>
+  <?php echo $this->headLink()->appendStylesheet('/css/foundation.css') ?>
+  <?php echo $this->headLink()->appendStylesheet('/css/app.css') ?>
+</head>
+<body>
+    <div class="row">
+	<div class="twelve columns white-background">
+            <h5>Web Application - Programming Languages Manager</h5>
+            <p>This is version 1.0.0 released on January 13, 2012</p>
+            <hr />
+            <ul class="menu">
+                <li><a href="/crud/">Home</a></li>
+                <li><a href="/crud/insert/">Insert</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+            <hr/>
+            <?php echo $this->layout()->content ?>
+            <hr />
+            <a target="_blank" href="http://www.joaoluis.net">João Luís Web Design</a> &copy; 2012. All rights reserved. Powered by <a target="_blank" href="http://framework.zend.com/">Zend Framework</a> (PHP) & <a target="_blank" href="http://foundation.zurb.com/">Foundation Framework</a> (CSS). Handle with care, please.
+	</div>
+    </div>
+</body>
+</html>
