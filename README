@@ -1,0 +1,12 @@
+This project was made as part of a job application. Here is the original request:
+
+ 
+----------
+Using the Zend Framewok, implement a simple web-app that deals with Programming Languages, stored in a sqlite database. A programming language has 2 fields: Name and Description. The name must be unique. Both fields are required.
+
+It should implement the basic CRUD (create, read, update and delete) actions, plus a single-input form for full-text search, which should work over both fields. The search results are delivered through ajax.
+
+Authentication is not required. CSS styling is not required.
+----------
+
+João Luís Web Design - http://www.joaoluis.net
